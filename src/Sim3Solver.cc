@@ -20,15 +20,28 @@
 
 
 #include "Sim3Solver.h"
+#include <ext/alloc_traits.h>
+#include <opencv2/calib3d.hpp>
+#include <opencv2/core/core_c.h>
+#include <vector>
+#include <cmath>
+#include <algorithm>
+#include <memory>
+
+#include "KeyFrame.h"
+#include "ORBmatcher.h"
+
+#include "Thirdparty/DBoW2/DUtils/Random.h"
+#include "MapPoint.h"
 
 #include <vector>
 #include <cmath>
 #include <opencv2/core/core.hpp>
 
 #include "KeyFrame.h"
-#include "ORBmatcher.h"
 
 #include "Thirdparty/DBoW2/DUtils/Random.h"
+#include "MapPoint.h"
 
 namespace ORB_SLAM2
 {

@@ -26,6 +26,10 @@
 #include <set>
 
 #include <mutex>
+#include <vector>
+
+#include "MapPoint.h"
+#include "KeyFrame.h"
 
 
 

@@ -19,10 +19,16 @@
 */
 
 #include "MapDrawer.h"
+#include <pangolin/pangolin.h>
+#include <GL/glew.h>
+#include <stddef.h>
+#include <mutex>
+#include <set>
+#include <vector>
+
 #include "MapPoint.h"
 #include "KeyFrame.h"
-#include <pangolin/pangolin.h>
-#include <mutex>
+#include "Map.h"
 
 namespace ORB_SLAM2
 {

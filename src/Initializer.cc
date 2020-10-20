@@ -19,11 +19,17 @@
 */
 
 #include "Initializer.h"
-
-#include "Thirdparty/DBoW2/DUtils/Random.h"
+#include <ext/alloc_traits.h>
+#include <algorithm>
+#include <cmath>
+#include <functional>
+#include <memory>
+#include <type_traits>
 
 #include "Optimizer.h"
 #include "ORBmatcher.h"
+#include "Thirdparty/DBoW2/DUtils/Random.h"
+#include "Frame.h"
 
 #include<thread>
 

@@ -18,13 +18,17 @@
 * along with ORB-SLAM2. If not, see <http://www.gnu.org/licenses/>.
 */
 
+#include <opencv2/imgproc.hpp>
+#include <memory>
+#include <ostream>
+#include<mutex>
+
 #include "FrameDrawer.h"
 #include "Tracking.h"
+#include "Frame.h"
+#include "Map.h"
+#include "MapPoint.h"
 
-#include <opencv2/core/core.hpp>
-#include <opencv2/highgui/highgui.hpp>
-
-#include<mutex>
 
 namespace ORB_SLAM2
 {

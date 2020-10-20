@@ -22,6 +22,8 @@
 #ifndef SIM3SOLVER_H
 #define SIM3SOLVER_H
 
+#include <stddef.h>
+#include <opencv2/core.hpp>
 #include <opencv2/opencv.hpp>
 #include <vector>
 
@@ -31,6 +33,8 @@
 
 namespace ORB_SLAM2
 {
+class KeyFrame;
+class MapPoint;
 
 class Sim3Solver
 {
